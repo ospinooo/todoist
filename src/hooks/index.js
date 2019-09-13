@@ -67,8 +67,12 @@ export const useTasks = (selectedProject) => {
   return { tasks, archivedTasks };
 };
 
-
-// use Projects Hook!
+/**
+ * UseProjects function Hook. 
+ * - Function to get task data from my user.
+ * - Global state for the projects.
+ * @param {int} selectedProject (Project to get tasks from)
+ */
 export const useProjects = () => {
   const [projects, setProjects] = useState([]);
 
