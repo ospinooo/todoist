@@ -1,7 +1,6 @@
+// Firebase db connection.
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-
-
 
 const firebaseConfig = firebase.initializeApp({
   apiKey: "AIzaSyCIhmVqIlMcTMjp02vaukUjjNI8rHi1nQc",
@@ -14,4 +13,6 @@ const firebaseConfig = firebase.initializeApp({
 })
 
 //Change the export name
+// In the module we treat it as firebaseConfig because the firebase library calls it firebase
+// But when we export it to the app we are working on we call it firebase
 export { firebaseConfig as firebase };
