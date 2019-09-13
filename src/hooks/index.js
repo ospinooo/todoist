@@ -32,7 +32,7 @@ export const useTasks = (selectedProject) => {
         id: task.id,
         ...task.data(),
       }));
-      console.log(newTasks);
+
 
       // set it.
       setTasks(

@@ -6,11 +6,7 @@ import { useTasks } from '../hooks';
 export const Tasks = () => {
   const { tasks } = useTasks('1');
 
-  console.log('HOLA');
-  console.log(tasks);
-  // const tasks = [];
   let projectName = '';
-
   return (
     <div className="tasks" data-testid="tasks">
       <h2 data-testid="project-name">{projectName}</h2>
