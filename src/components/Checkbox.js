@@ -1,7 +1,13 @@
+// Checkbox
 import React from 'react';
+// Import my firebase configuration.
 import { firebase } from '../firebase';
 
 export const Checkbox = ((id) => {
+
+  /**
+   * Archive a task function.
+   */
   const archiveTask = () => {
     firebase
       .firestore()

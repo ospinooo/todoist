@@ -1,5 +1,6 @@
+// Tasks
 import React from 'react';
-import { Checkbox } from './Checkbox'
+import { Checkbox } from './Checkbox';
 
 import { useTasks } from '../hooks';
 

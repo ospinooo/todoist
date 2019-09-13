@@ -1,6 +1,14 @@
-
-
+/**
+ * Helpers Module
+ */
 import { collatedTasks } from '../constants'
 
-export const collatedTasksExist = selectedProject =>
-  collatedTasks.find(task => task.key === selectedProject)
+/**
+ * Function helper to check if the selectedProject is available.
+ * @param {x} selectedProject 
+ */
+export const collatedTasksExist = selectedProject => collatedTasks.find(task => task.key === selectedProject);
+
+
+
+

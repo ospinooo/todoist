@@ -1,3 +1,4 @@
+// App content
 import React from 'react';
 import { Sidebar } from './sidebar';
 import { Tasks } from '../Tasks'
