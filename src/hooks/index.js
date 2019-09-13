@@ -4,11 +4,22 @@ import { firebase } from '../firebase';
 import { collatedTasksExist } from '../helpers';
 
 
-// Tasks Hook !
+/**
+ * UseTask function Hook. 
+ * - Function to get task data given a project.
+ * - Global state for the tasks.
+ * @param {int} selectedProject (Project to get tasks from)
+ */
 export const useTasks = (selectedProject) => {
-  const [tasks, setTasks] = useState([]); // tasks is the variable and set Tasks is the function that changes it
+
+
+  // Tasks is the variable and set Tasks is the function that changes it
+  const [tasks, setTasks] = useState([]);
+
+  // Archived
   const [archivedTasks, setArchivedTasks] = useState([]);
-  // do some work
+
+  // Every time the selectedProject changes it runs. Update the data.
   useEffect(() => {
     // our tasks
     let unsubscribe = firebase
@@ -34,7 +45,7 @@ export const useTasks = (selectedProject) => {
       }));
 
 
-      // set it.
+      // Set
       setTasks(
         selectedProject === 'NEXT_7'
           ? newTasks.filter(
@@ -50,7 +61,7 @@ export const useTasks = (selectedProject) => {
     });
 
     return () => unsubscribe();
-  }, [selectedProject]); // once it changes we run all above
+  }, [selectedProject]); // Once it changes we run all above
   // Only run it when it is selected a new project. 
 
   return { tasks, archivedTasks };
