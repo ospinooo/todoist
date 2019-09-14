@@ -28,8 +28,6 @@ export const AddProject = ({ shouldShow = false }) => {
         setShow(false);
       })
 
-  console.log(show);
-
   return (
     <div className="add-project" data-testid="add-project">
       {show && (
