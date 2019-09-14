@@ -2,6 +2,7 @@
  * Helpers Module
  */
 import { collatedTasks } from '../constants'
+import { ProjectsContext } from '../context';
 
 /**
  * Function helper to check if the selectedProject is available.
@@ -9,7 +10,22 @@ import { collatedTasks } from '../constants'
  */
 export const collatedTasksExist = selectedProject => collatedTasks.find(task => task.key === selectedProject);
 
+/**
+ * 
+ * @param {*} projects 
+ * @param {*} projectId 
+ */
+export const getTitle = (projects, projectId) =>
+  projects.find(project => project.projectId === projectId);
 
+
+/**
+ * 
+ * @param {*} projects 
+ * @param {*} key 
+ */
+export const getCollatedTitle = (projects, key) =>
+  projects.find(project => project.key === key)
 
 
 
