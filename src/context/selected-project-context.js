@@ -6,6 +6,7 @@ export const SelectedProjectContext = createContext();
 
 // Component Wrapper
 export const SelectedProjectProvider = ({ children }) => {
+  // By default INBOX is the selectedProject.
   const [selectedProject, setSelectedProject] = useState('INBOX'); // Not custom hook, []
 
   return (
