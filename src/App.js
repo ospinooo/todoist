@@ -2,7 +2,8 @@ import React from 'react';
 import { Header } from './components/layout/header';
 import { Content } from './components/layout/content';
 import { ProjectsProvider, SelectedProjectProvider } from './context';
-
+import { config } from 'dotenv';
+config();
 
 import './App.scss'
 // Name exports
