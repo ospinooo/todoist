@@ -90,7 +90,7 @@ export const useProjects = () => {
           docId: project.id,
         }));
 
-        // needs the condition only set if they are different
+        // Needs the condition only set if they are different
         if (JSON.stringify(allProjects) !== JSON.stringify(projects)) {
           setProjects(allProjects);
         }
