@@ -53,7 +53,7 @@ export const useTasks = (selectedProject) => {
               moment(task.date, 'DD-MM-YYYY').diff(moment(), 'days') <= 7
               && task.archived !== true
           )
-          : newTasks.filter(task => task.archived === true)
+          : newTasks.filter(task => task.archived !== true)
       );
 
       // set in the state.
