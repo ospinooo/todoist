@@ -22,15 +22,36 @@ export const Sidebar = () => {
   return (
     <div className="sidebar" data-testid="sidebar">
       <ul className="sidebar__generic">
-        <li data-testid="inbox" className="inbox">
+        <li
+          data-testid="inbox"
+          className={active === 'inbox' ? 'active' : undefined}
+          onClick={() => {
+            setActive('inbox');
+            setSelectedProject('INBOX');
+          }}
+        >
           <span><FaInbox></FaInbox></span>
           <span>Inbox</span>
         </li>
-        <li data-testid="today" className="today">
+        <li
+          data-testid="today"
+          className={active === 'today' ? 'active' : undefined}
+          onClick={() => {
+            setActive('today');
+            setSelectedProject('TODAY');
+          }}
+        >
           <span><FaRegCalendar></FaRegCalendar></span>
           <span>Today</span>
         </li>
-        <li data-testid="next_7" className="next_7">
+        <li
+          data-testid="next_7"
+          className={active === 'next_7' ? 'active' : undefined}
+          onClick={() => {
+            setActive('next_7');
+            setSelectedProject('NEXT_7');
+          }}
+        >
           <span><FaRegCalendarAlt></FaRegCalendarAlt></span>
           <span>Next 7 day</span>
         </li>
@@ -38,7 +59,7 @@ export const Sidebar = () => {
 
       <div className="sidebar__middle" onClick={() => setShowProjects(!showProjects)}>
         <span>
-          <FaChevronDown></FaChevronDown>
+          <FaChevronDown className={!showProjects ? 'hidden-projects' : undefined}></FaChevronDown>
         </span>
 
         <h2>Projects</h2>
