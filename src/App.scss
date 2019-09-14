@@ -335,6 +335,7 @@ header {
       color: #0000008a;
       margin-right: 10px;
 
+      // Svg Fa icon rotate, when hidden-projects is activate
       svg.hidden-projects {
         transform: rotate(-90deg);
       }
