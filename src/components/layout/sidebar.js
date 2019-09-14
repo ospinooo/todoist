@@ -9,7 +9,7 @@ import {
 import { useSelectedProjectValue } from '../../context';
 
 import { Projects } from '../Projects';
-import { AddPRoject } from '../AddProject';
+import { AddProject } from '../AddProject';
 /**
  * Application Sidebar.
  */
@@ -66,7 +66,7 @@ export const Sidebar = () => {
         <h2>Projects</h2>
       </div>
       <ul className="sidebar__projects">{showProjects && <Projects />}</ul>
-      {showProjects && <AddPRoject />}
+      {showProjects && <AddProject />}
     </div>
   )
 }
