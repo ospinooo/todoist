@@ -18,8 +18,9 @@ export const IndividualProject = ({ project }) => {
       .doc(docId)
       .delete()
       .then(() => {
+        // After deleting the project we set
         setProjects([...projects]);
-        setSelectedProject('INBOX');
+        setSelectedProject('INBOX'); // set selected projects to the INBOX.
       })
   }
 
