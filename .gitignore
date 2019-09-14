@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Notes Learn
-notes.md
+notes
 
 # Env
 .env
