@@ -86,7 +86,7 @@ export const useProjects = () => {
       .get()
       .then(snapshot => {
         const allProjects = snapshot.docs.map(project => ({
-          ...project.data(),
+          ...project.data(), // spread operator of data to concat with docId.
           docId: project.id,
         }));
 
