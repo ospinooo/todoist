@@ -35,6 +35,10 @@ ul {
   padding: 0;
 }
 
+
+/* DarkMODE
+==================================== */
+
 .darkmode {
   header {
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
@@ -422,34 +426,34 @@ header {
     z-index: 2000;
     transition: opacity 0.2s ease-in;
     height: calc(100vh);
-  }
 
-  .add-task__main {
-    overflow: visible;
-    margin-bottom: 20px;
-    margin-top: 55px;
-    border-radius: 5px;
-    background-color: white;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    padding: 20 30px;
-    transform: translate(-50%, -50%);
+    .add-task__main {
+      overflow: visible;
+      margin-bottom: 20px;
+      margin-top: 55px;
+      border-radius: 5px;
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      padding: 20px 30px;
+      transform: translate(-50%, -50%);
 
-    .header {
-      font-size: 13px;
-      margin-bottom: 13px;
-      float: left;
+      .header {
+        font-size: 13px;
+        margin-bottom: 20px;
+        float: left;
+      }
     }
-  }
 
-  .add-task__cancel-x {
-    cursor: pointer;
-    color: gray;
-    float: right;
-    font-weight: bold;
-    font-size: 12px;
-    margin-top: 10px;
+    .add-task__cancel-x {
+      cursor: pointer;
+      color: gray;
+      float: right;
+      font-weight: bold;
+      font-size: 12px;
+      margin-top: 10px;
+    }
   }
 
   &__main {
@@ -531,7 +535,9 @@ header {
     @include task-item();
 
     span:first-of-type {
-      margin-right: 10px svg {
+      margin-right: 10px;
+
+      svg {
         fill: grey;
       }
     }
