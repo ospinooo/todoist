@@ -26,6 +26,9 @@ export const ProjectsContext = createContext();
  * Using context 
  */
 export const ProjectsProvider = ({ children }) => {
+  // Custom hook.
+  // we use it to keep our projects syncronized with the database
+  // We use the context to be able to access them all over the app.
   const { projects, setProjects } = useProjects(); // Custom hook with {}
 
   return (

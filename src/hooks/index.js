@@ -12,7 +12,6 @@ import { collatedTasksExist } from '../helpers';
  */
 export const useTasks = (selectedProject) => {
 
-
   // Tasks is the variable and set Tasks is the function that changes it
   const [tasks, setTasks] = useState([]);
 
@@ -71,7 +70,6 @@ export const useTasks = (selectedProject) => {
  * UseProjects function Hook. 
  * - Function to get task data from my user.
  * - Global state for the projects.
- * @param {int} selectedProject (Project to get tasks from)
  */
 export const useProjects = () => {
   const [projects, setProjects] = useState([]);

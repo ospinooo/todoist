@@ -6,7 +6,10 @@ export const SelectedProjectContext = createContext();
 
 // Component Wrapper
 export const SelectedProjectProvider = ({ children }) => {
+
   // By default INBOX is the selectedProject.
+  // It is not a hook beacuse it doesn't depend on the outside (Firebase)
+  // Just SPA data about the selected project to have it all over the data.
   const [selectedProject, setSelectedProject] = useState('INBOX'); // Not custom hook, []
 
   return (
