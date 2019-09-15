@@ -3,12 +3,13 @@ import React from 'react';
 // Import my firebase configuration.
 import { firebase } from '../firebase';
 
-export const Checkbox = ((id) => {
+export const Checkbox = ({ id }) => {
+
 
   /**
    * Archive a task function.
    */
-  const archiveTask = () => {
+  const archiveTask = (id) => {
     firebase
       .firestore()
       .collection('tasks')
@@ -20,8 +21,8 @@ export const Checkbox = ((id) => {
 
   return (
     <div className="checkbox-holder" data-testid="checkbox-action"
-      onClick={() => archiveTask()}>
+      onClick={() => archiveTask(id)}>
       <span className="checkbox"></span>
     </div>
   );
-})
+}
