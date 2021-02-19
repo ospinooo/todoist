@@ -1,20 +1,24 @@
 {
   "name": "todoist",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "homepage": "https://pabloospino.com/todoist/",
+  "repository": "https://github.com/ospinooo/todoist.git",
+  "author": "Ospino <ospino.p@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "dotenv": "^8.1.0",
-    "firebase": "^6.2.4",
-    "moment": "^2.24.0",
-    "node-sass": "^4.12.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-icons": "^3.7.0",
-    "react-scripts": "3.1.1"
+    "dotenv": "^8.2.0",
+    "firebase": "^8.2.8",
+    "moment": "^2.29.1",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
+    "react-scripts": "^4.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --help",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
