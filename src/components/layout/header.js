@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FaPizzaSlice } from 'react-icons/fa/';
 import { AddTask } from '../AddTask';
-import logo from './logo.png';
+import logo from '../../assets/logo.png';
 /**
  * Header
  */

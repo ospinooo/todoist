@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Header } from './components/layout/header';
 import { Content } from './components/layout/content';
+import { Footer } from './components/layout/footer';
 import { ProjectsProvider, SelectedProjectProvider } from './context';
 import './App.scss';
 
@@ -18,6 +19,7 @@ export const App = ({ darkModeDefault = false }) => {
           className={darkMode ? 'darkmode' : undefined}>
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Content />
+          <Footer></Footer>
         </main>
       </ProjectsProvider>
     </SelectedProjectProvider>

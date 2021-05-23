@@ -55,7 +55,7 @@ export const AddTask = ({
         })
     )
   }
-  console.log((showMain || showQuickAddTask));
+
   return (
     <div
       className={showQuickAddTask ? 'add-task add-task__overlay' : 'add-task'}
