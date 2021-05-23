@@ -146,6 +146,10 @@
       font-weight: bold;
       font-size: 12px;
       margin-top: 10px;
+
+      &:hover {
+        color: black;
+      }
     }
   }
 
@@ -159,6 +163,9 @@
     float: right;
     color: gray;
     margin: 20px 10px;
+    &:hover {
+      color: black;
+    }
   }
 
   &__project {
@@ -240,6 +247,7 @@
 .project-overlay {
   @include box-overlay();
   background-color: white;
+  position: absolute;
 
   &__list li {
     @include task-item();

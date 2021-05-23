@@ -32,7 +32,7 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) => {
             </span>
             <span>
               Tomorrow
-              </span>
+            </span>
           </li>
           <li
             onClick={() => {

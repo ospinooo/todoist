@@ -129,7 +129,7 @@ export const AddTask = ({
               }}
             >
               Cancel
-        </span>
+            </span>
           )}
 
           {/* OVerlay buttons */}
@@ -145,7 +145,7 @@ export const AddTask = ({
             data-testid="show-task-date-overlay"
             onClick={() => setShowTaskDate(!showTaskDate)}
           >
-            <FaRegCalendarAlt></FaRegCalendarAlt>
+            <FaRegCalendarAlt></FaRegCalendarAlt>  {taskDate ? taskDate : undefined}
           </span>
         </div>
       )

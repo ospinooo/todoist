@@ -1,15 +1,15 @@
 /* Mixings
 ==================================== */
 
-
 /*
   Box Overlay.
  */
 @mixin box-overlay() {
   box-shadow: $generic-box-shadow;
-  position: absolute;
+  margin: 70px;
   width: 100%;
-  z-index: 1;
+  position: absolute;
+  z-index: 9;
   top: 85;
   border-radious: 3px;
 }
@@ -23,13 +23,10 @@
 
   @if $va-align !=center {
     justify-content: left;
-  }
-
-  @else {
+  } @else {
     justify-content: center;
   }
 }
-
 
 /*
   Cant be selected.
@@ -43,11 +40,10 @@
   user-select: none;
 }
 
-
 /*
   Button mixing. 
  */
-@mixin btn ($width) {
+@mixin btn($width) {
   width: $width;
   background-color: $generic-bg;
   color: #fff !important;
@@ -65,8 +61,11 @@
   text-decoration: none !important;
   text-align: center;
   cursor: pointer;
-}
 
+  &:hover {
+    background-color: $generic-bg-dark;
+  }
+}
 
 /*
   Mixin CANCEL to use it in modals buttons
@@ -76,6 +75,9 @@
   cursor: pointer;
   font-size: 14px;
   margin: 2px 5px;
+  &:hover {
+    color: black;
+  }
 }
 
 // task item how task looks
@@ -98,7 +100,6 @@
     background-color: #f9f9f9;
   }
 }
-
 
 /*
   What do you want to happen after $from pixels.
