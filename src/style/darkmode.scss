@@ -16,4 +16,8 @@
       background-color: $generic-bg-dark;
     }
   }
+  .add-task__plus,
+  .add-project__plus {
+    color: $generic-bg;
+  }
 }
