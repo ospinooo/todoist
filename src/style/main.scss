@@ -1,0 +1,32 @@
+/* Main Tags
+==================================== */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1; // 1 and 100% is the same
+  font-family: "Roboto", sans-serif; // General font-family
+  color: #202020; // General text color
+  background-color: #fafafa; // Background color
+
+  //FONT-SMOTH
+  font-smooth: always;
+  // MACOS
+  -webkit-font-smoothing: antialised;
+  // FIREFOX
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
