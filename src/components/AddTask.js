@@ -138,7 +138,7 @@ export const AddTask = ({
             data-test-id="show-project-overlay"
             onClick={() => setShowProjectOverlay(!showProjectOverlay)}
           >
-            <FaRegListAlt></FaRegListAlt>
+            <FaRegListAlt></FaRegListAlt> {project ? '*' : undefined}
           </span>
           <span
             className="add-task__date"
